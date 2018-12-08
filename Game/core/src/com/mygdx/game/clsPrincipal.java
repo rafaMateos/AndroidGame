@@ -14,9 +14,11 @@ public class clsPrincipal extends Game {
 	@Override
 	public void create() {
 
-		setScreen(new PantallaMain(this));
+		setScreen(new Box2dScream(this));
 
 
 
 	}
+
+
 }

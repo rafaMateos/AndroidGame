@@ -7,12 +7,24 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 public class ActorJugador extends Actor {
 
     private Texture jugador;
+    private boolean esVivo;
+
+    public boolean isEsVivo() {
+        return esVivo;
+    }
+
+    public void setEsVivo(boolean esVivo) {
+        this.esVivo = esVivo;
+    }
 
     public ActorJugador(Texture jugador){
 
         this.jugador = jugador;
+        this.esVivo = true;
+        setSize(150,150);
 
     }
+
 
     @Override
     public void act(float delta) {
