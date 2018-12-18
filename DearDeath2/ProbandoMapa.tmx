@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="240" height="13" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="box.tsx"/>
+ <tileset firstgid="17" source="grassHillLeft2.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="240" height="13">
+  <data encoding="base64" compression="zlib">
+   eJzt2VsLhCAQhuHZ817sof7/n10hhBhKv9pQlFd4LiZMm2xAaTSzEcBhrlau1c4V6M3TyrXauQK9eVm5VjtXoDeDlWu1cwV6w/4ZaBf7Z6Bd7J+BdvH/CGgX51+gXZx/gXb1cv49zZyDi01ng1ys9PHxe+YTfBPx/NqQ6BOvr8V+DHX+3Ji5sfwzRj4X/1ypHFJzrs2r9FPipXel5rKWX7xHvW/rGqXWvWT93oJ78LBp3350vLUO98apbyz3He79Lv0aqmOrdauMszSGWgPKnLl6+6dOlXxT71mtbV/PW9ZMWdOa9fsDliCwCw==
+  </data>
+ </layer>
+</map>
