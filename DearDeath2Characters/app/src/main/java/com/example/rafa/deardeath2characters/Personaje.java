@@ -1,6 +1,11 @@
 package com.example.rafa.deardeath2characters;
 
-public class Personaje {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import java.io.Serializable;
+
+public class Personaje implements Parcelable {
     private String _nombre;
     private String _ataque;
     private String _defensa;
@@ -47,4 +52,37 @@ public class Personaje {
     public void setImage(int image) {
         this.image = image;
     }
+
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this._nombre);
+        dest.writeString(this._ataque);
+        dest.writeString(this._defensa);
+        dest.writeInt(this.image);
+    }
+
+    protected Personaje(Parcel in) {
+        this._nombre = in.readString();
+        this._ataque = in.readString();
+        this._defensa = in.readString();
+        this.image = in.readInt();
+    }
+
+    public static final Creator<Personaje> CREATOR = new Creator<Personaje>() {
+        @Override
+        public Personaje createFromParcel(Parcel source) {
+            return new Personaje(source);
+        }
+
+        @Override
+        public Personaje[] newArray(int size) {
+            return new Personaje[size];
+        }
+    };
 }
